@@ -80,6 +80,7 @@
     .userContent {
         text-align: center;
         align-items: center;
+        padding: 5rem 0;
     }
 
     .userContent h1{
