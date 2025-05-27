@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
+
+.container {
+    padding: 1rem;
+    background: white;
+}
+
+.container h1 {
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    color: #ff6347;
+}
+
+.stackContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stackItem {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stackItem h2{
+    font-size: 1.3rem;
+    font-family: "Boldonse", system-ui;
+}
+
+.stackCol{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.stackColItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ff6347;
+    text-align: center;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.stackColItem:hover{
+    transition: all ease-in-out 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.stackColItem img{
+    height: 70px;
+}
+
+.stackColItem span{
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .container h1 {
+        font-size: 2.5em;
+    }
+
+    .stackItem h2 {
+        font-size: 1.1rem;
+    }
+
+    .stackItem {
+        flex-wrap: wrap;
+    }
+
+    .stackCol{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .stackColItem {
+        height: 120px;
+        width: 120px;
+    }
+
+    .stackColItem img{
+        height: 55px;
+    }
+}

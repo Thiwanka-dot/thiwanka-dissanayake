@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.navList ul{
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  font-size: 1.5rem;
+  font-family: 'Stanley', sans-serif;
+  padding-top: 0.35rem;
+  padding-left: 0.5rem;
+  padding-right: 0.9rem;
+  background: white;
+}
+
+.resumeBtn a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.45rem 1rem;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.resumeBtn a:hover{
+  background: #ff6347;
+  transition: all ease-in-out 0.3s;
+}
+
+.buttonList {
+  display: flex;
+  align-items: center;
+}
+
+.toggleBtn {
+  font-size: 1.5rem;
+  padding: 0.45rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  background: white;
+}
+
+.fullScreenMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+}
+
+.partOne {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navItem {
+  margin: 1rem;
+}
+
+.navItem a {
+  color: white;
+  font-size: 3.2rem;
+  font-family: "Libre Baskerville", serif;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navItem a:hover {
+  color: #ff6347;
+}
+
+.copyright{
+  border-top: 1px solid white;
+  width: 100%;text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+@media (max-width: 800px){
+
+  .navItem a{
+    font-size: 2.2rem;
+  }
+
+  .logo{
+    font-size: 1.2rem;
+  }
+
+  .copyright{
+    font-size: 13px;
+  }
+}

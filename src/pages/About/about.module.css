@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
+
+.container {
+    padding: 1rem;
+    background: white;
+}
+
+.container h1 {
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    color: #ff6347;
+}
+
+.aboutCon {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.aboutCol {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.aboutCol h2 {
+    font-size: 1.3rem;
+    font-family: "Boldonse", system-ui;
+}
+
+.aboutCol p a{
+    text-decoration: underline;
+    color: #ff6347;
+}
+
+.skillList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skillList li {
+    padding: 0.5rem 1rem;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skillList li:hover {
+    background: #ff6347;
+    transition: all ease-in-out 0.3s;
+}
+
+.educationList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.educationList li {
+    border-left: 3px solid #ff6347;
+    padding-left: 10px;
+}
+
+.educationList h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.educationList p {
+    font-size: 1rem;
+    color: #555;
+    font-size: 13px;
+}
+
+.hobbiesList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.hobbiesList li{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+
+
+.hobbiesList li img{
+    border-bottom: 1px solid white;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+
+}
+
+.hobbiesList li span{
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hobbiesList li:hover{
+    background: #ff6347;
+    transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 800px) {
+    .container h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutCol h2 {
+        font-size: 1.1rem;
+    }
+
+    .educationList h3{
+        font-size: 1.1rem;
+    }
+
+    .educationList p {
+        font-size: 0.9rem;
+    }
+
+    .aboutCol {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbiesList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobbiesList li span{
+        font-size: 1rem;
+    }
+}
