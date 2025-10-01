@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import style from "./contact.module.css"
 import { FaLinkedinIn, FaGithub, FaInstagram, FaFacebook, FaPaperPlane, FaCheckCircle, FaEnvelope, FaAddressBook } from "react-icons/fa"
 import contact from "../../assets/contact-img.jpg"
-import emailjs from 'emailjs-com';
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [popupVisible, setPopupVisible] = useState(false);
