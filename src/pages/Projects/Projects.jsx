@@ -5,7 +5,7 @@ import restaurant from "../../assets/Restaurant.png"
 import train from "../../assets/train.png"
 import cab from "../../assets/cab.png"
 import QR from "../../assets/qrcode.png"
-import peerConnect from "../../assets/peerConnect.png"
+import peerConnect from "../../assets/peerconnect.png"
 
 export default function Projects() {
   return (
