@@ -5,6 +5,7 @@ import restaurant from "../../assets/Restaurant.png"
 import train from "../../assets/train.png"
 import cab from "../../assets/cab.png"
 import QR from "../../assets/qrcode.png"
+import peerConnect from "../../assets/peerConnect.png"
 
 export default function Projects() {
   return (
@@ -14,6 +15,27 @@ export default function Projects() {
         <h1>Projects</h1>
         <div className="p-5"></div>
         <div className={style.projectContainer}>
+          <a href="https://github.com/Thiwanka-dot/peer-support" className={style.projectItem}>
+            <img src={peerConnect} />
+            <div className={style.projectContent}>
+              <div className={style.itemText}>
+                <h2>PeerConnect</h2>
+                <FaArrowRight />
+              </div>
+              <p>PeerConnect is a web-based platform designed to 
+                connect individuals in underserved communities with 
+                supportive peers and resources. It provides a safe, 
+                user-friendly space where users can share experiences, 
+                access guidance, and find mental health support.
+              </p>
+              <div className={style.progLan}>                
+                <span>MERN Stack</span>
+                <span>Socket.IO</span>
+                <span>JWT</span>
+                <span>Chart.js</span>
+              </div>
+            </div>
+          </a>
           <a href="https://github.com/Thiwanka-dot/QR_Code_Manager" className={style.projectItem}>
             <img src={QR} />
             <div className={style.projectContent}>
@@ -64,17 +86,17 @@ export default function Projects() {
                 <h2>Sri Lanka Railway Website</h2>
                 <FaArrowRight />
               </div>
-              <p>MegaCityCab-v2 is an open-source project designed 
-                to provide a seamless and user-friendly experience 
-                for cab services. The application includes both 
-                frontend and backend functionalities, ensuring 
-                efficient booking and management of rides. The 
-                project is actively maintained and open to 
-                contributions to enhance its features and usability.
+              <p>This SOC-based application for the Railway Department 
+                of Sri Lanka allows passengers to search the trains 
+                based on the locations and make a booking for the 
+                selected train. The admins of this application manage 
+                the information about the trains and their availabilities, 
+                and the bookings made by the passengers. 
               </p>
               <div className={style.progLan}>
                 <span>ReactJS</span>
                 <span>NodeJS</span>
+                <span>C++</span>
                 <span>ASP.NET</span>
                 <span>Web API</span>
               </div>
@@ -87,7 +109,7 @@ export default function Projects() {
                 <h2>OuterClove Restaurant</h2>
                 <FaArrowRight />
               </div>
-              <p>This is a restaurant website project that provides a 
+              <p>A restaurant website project that provides a 
                 comprehensive solution for managing a restaurant's operations, 
                 including customer orders, reservations, 
                 and product management. The project is built using a combination 

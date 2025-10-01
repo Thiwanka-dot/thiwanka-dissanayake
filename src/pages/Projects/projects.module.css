@@ -36,6 +36,8 @@
 
 .projectItem img{
     width: 100%;
+    height: auto;
+    max-height: 250px;
     object-fit: contain;
     border-radius: 15px 15px 0 0;
     border-bottom: 1px solid;
